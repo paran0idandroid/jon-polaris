@@ -38,12 +38,12 @@
     <!--这里的id与settings.xml中的servers节点配置的用户ID一直，这样才能使用配置的用户去上传到maven私有仓库 -->
     <!--此仓库对应的为RELEASE版本的jar-->
     <id>binghe</id>
-    <url>http://192.168.106.102:8081/repository/maven-releases/</url>
+    <url>http://192.168.107.128:8081/repository/maven-releases/</url>
 </repository>
 <snapshotRepository>
     <!--这里的id与settings.xml中的servers节点配置的用户ID一直，这样才能使用配置的用户去上传到maven私有仓库 -->
     <!--此仓库对应的为SNAPSHOT版本的jar-->
     <id>binghe</id>
-    <url>http://192.168.106.102:8081/repository/maven-snapshots/</url>
+    <url>http://192.168.107.128:8081/repository/maven-snapshots/</url>
 </snapshotRepository>
 </distributionManagement>

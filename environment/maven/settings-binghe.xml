@@ -12,9 +12,9 @@
   
   <servers>
     <server>
-	   <id>binghe</id>
-	   <username>binghe</username>
-	   <password>binghe123</password>
+	   <id>jon</id>
+	   <username>jon</username>
+	   <password>imjon709394</password>
 	</server>
   </servers>
 
@@ -22,7 +22,7 @@
 	<mirror>
 		<id>central</id>
 		<name>Local Repository</name>
-		<url>http://192.168.106.102:8081/repository/maven-public</url>
+		<url>http://192.168.107.128:8081/repository/maven-public</url>
 		<mirrorOf>*</mirrorOf>
 	</mirror>
 	<mirror>
@@ -48,7 +48,7 @@
 		<repositories>
 			<repository>
 				<id>nexus-public</id>
-				<url>http://192.168.106.102:8081/repository/maven-public/</url>
+				<url>http://192.168.107.128:8081/repository/maven-public/</url>
 				<releases>
 					<enabled>true</enabled>
 					<updatePolicy>always</updatePolicy>
