@@ -1,7 +1,15 @@
 package io.jon.polaris.context.request;
 
+import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpHeaders;
+import io.netty.handler.codec.http.HttpMethod;
+import io.netty.handler.codec.http.QueryStringDecoder;
 import org.asynchttpclient.Request;
 import org.asynchttpclient.cookie.Cookie;
+
+import java.nio.charset.Charset;
+import java.util.List;
+
 public interface HttpPolarisRequest extends PolarisRequest{
 
     /**
@@ -65,8 +73,83 @@ public interface HttpPolarisRequest extends PolarisRequest{
     String getBody();
 
     /**
+     * 获取Cookie内容
+     */
+    io.netty.handler.codec.http.cookie.Cookie getCookie(String name);
+
+    /**
+     * 获取查询参数
+     */
+    List<String> getQueryParameters(String name);
+
+    /**
+     * 查询post查询参数
+     */
+    List<String> getPostParameters(String name);
+
+    /**
      * 构建请求对象
      */
     Request buildRequest();
+
+    /**
+     * 获取唯一id
+     */
+    String getUniqueId();
+
+    /**
+     * 获取开始时间
+     */
+    long getBeginTime();
+
+    /**
+     * 获取编码
+     */
+    Charset getCharset();
+
+    /**
+     * 获取客户端ip
+     */
+    String getClientIp();
+
+    /**
+     * 获取目标host
+     */
+    String getTargetHost();
+
+    /**
+     * 获取uri
+     */
+    String getUri();
+
+    /**
+     * 获取请求path
+     */
+    String getPath();
+
+    /**
+     * 获取Method
+     */
+    HttpMethod getMethod();
+
+    /**
+     * 获取请求头content-type
+     */
+    String getContentType();
+
+    /**
+     * 获取header
+     */
+    HttpHeaders getHeaders();
+
+    /**
+     * 获取解码器
+     */
+    QueryStringDecoder getQueryDecoder();
+
+    /**
+     * 获取FullHttpRequest
+     */
+    FullHttpRequest getFullHttpRequest();
 
 }

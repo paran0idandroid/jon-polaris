@@ -17,9 +17,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netty.version>4.1.51.Final</netty.version>
         <async-http-client.version>2.0.37</async-http-client.version>
         <biz.paluch.redis.version>4.4.6.Final</biz.paluch.redis.version>
@@ -36,6 +33,7 @@
         <fastjson.verson>1.2.76</fastjson.verson>
         <jsonpath.version>2.4.0</jsonpath.version>
         <kafka.version>2.3.1</kafka.version>
+        <prometheus.version>1.10.2</prometheus.version>
         <maven.compiler.version>3.8.0</maven.compiler.version>
         <maven.surefire.version>2.21.0</maven.surefire.version>
         <maven.source.version>3.0.1</maven.source.version>
